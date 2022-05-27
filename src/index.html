@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FCM - TEST</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/send-resquest.js"></script>
+    <script src="js/tata.js"></script>
+    <title>FCM - Tools</title>
+</head>
+
+<body>
+    <div class="jumbotron" style="padding:40px;">
+        <h1>Firebase Cloud Message</h1>
+        <p>Simple interface for firebase cloud message.</p>
+    </div>
+    <div class="container">
+        <form>
+            <div id="input-div">
+                <div class="mb-3">
+                    <label for="title_input" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title_input" aria-describedby="emailHelp">
+                </div>
+                <label for="body_input" class="form-label">Body message</label>
+                <div class="mb-3">
+                    <textarea rows="5" cols="60" name="description" id="body_input"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="server_key_input" class="form-label">Server key</label>
+                    <input type="text" class="form-control" id="server_key_input">
+                </div>
+                <div class="mb-3">
+                    <label for="android_channel_id_input" class="form-label">Android Channel id</label>
+                    <input type="text" class="form-control" id="android_channel_id_input">
+                </div>
+                <div class="mb-3">
+                    <label for="device_token_id_input" class="form-label">Device Token</label>
+                    <input type="text" class="form-control" id="device_token_id_input">
+                </div>
+            </div>
+
+            <button type="submit" id="send_req_btn" style="float: right; margin: 10px;" class="btn btn-primary col col-lg-2">Enviar</button>
+
+            <button type="button" id="add_form" style="float: right; margin-top: 10px; margin: 10px;" class="btn btn-primary">+</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
